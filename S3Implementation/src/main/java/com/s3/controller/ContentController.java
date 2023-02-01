@@ -32,6 +32,8 @@ public class ContentController
 		contentService.addFileToS3(key, documents);
 	}
 
+
+	// Creating new folder
 	@PostMapping(
 			value = "/folder", consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE
 	)
